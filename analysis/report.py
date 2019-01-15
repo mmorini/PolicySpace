@@ -42,7 +42,8 @@ def stats(filename):
     plot_data.legend(loc='best', ncol=4, fancybox=True, shadow=True, labels=names_mun)
     plot_data.set_xticks(list_of_years_division)
     plot_data.set_xticklabels(list_of_years)
-    plot_data.set_axis_bgcolor('w')
+    #plot_data.set_axis_bgcolor('w')
+    plot_data.set_facecolor('w')
     fig = plot_data.get_figure()
     fig.set_size_inches(15, 10)
     fig.savefig(os.path.join(conf.RUN['OUTPUT_DATA_PATH'],
@@ -58,7 +59,7 @@ def stats(filename):
     plot_data.legend(loc='best', ncol=4, fancybox=True, shadow=True, labels=names_mun)
     plot_data.set_xticks(list_of_years_division)
     plot_data.set_xticklabels(list_of_years)
-    plot_data.set_axis_bgcolor('w')
+    plot_data.set_facecolor('w')
     fig = plot_data.get_figure()
     fig.set_size_inches(15, 10)
     fig.savefig(os.path.join(conf.RUN['OUTPUT_DATA_PATH'],

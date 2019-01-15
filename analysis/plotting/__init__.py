@@ -71,7 +71,7 @@ class Plotter:
         plot.set_xlabel('Years')
         if y_label is not None:
             plot.set_ylabel(y_label)
-        plot.set_axis_bgcolor('w')
+        plot.set_facecolor('w')
         fig = plot.get_figure()
         fig.set_size_inches(15, 10)
         return fig
